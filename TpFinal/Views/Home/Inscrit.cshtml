@@ -1,0 +1,38 @@
+﻿@model TpFinal.Models.InscrireParticipant
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <title>inscrit</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h1>Merci @Model.Prenom !</h1>
+        <div class="lead">
+            @if (Model.Montant > 0)
+            {
+                @:Inscription Enregistrer
+            }
+            else
+            {
+                @:Inscription gratuite?
+            }
+            <p>
+                <a href="@Url.Action("ListInscription", "Home")">Voir</a> les gens inscrit?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

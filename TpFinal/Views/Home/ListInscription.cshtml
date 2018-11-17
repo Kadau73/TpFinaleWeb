@@ -1,0 +1,44 @@
+﻿@model IEnumerable<TpFinal.Models.InscrireParticipant>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <title>ListInscription</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel-body">
+        <h2>Voici la liste des gens inscrient : </h2>
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Prénom : </th>
+                    <th>Nom : </th>
+                    <th>Courriel : </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (TpFinal.Models.InscrireParticipant i in Model)
+                {
+                <tr>
+                    <td>@i.Prenom</td>
+                    <td>@i.Nom</td>
+                    <td>@i.Email</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
