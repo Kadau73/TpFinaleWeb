@@ -14,6 +14,7 @@ namespace TpFinal.Models
         [Required(ErrorMessage = "SVP entrez votre prénom")]
         public string Prenom { get; set; }
         [Required(ErrorMessage = "SVP entrez votre adresse électronique")]
+        [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Courriel valide SVP.")]
         public string Email { get; set; }
         [Required(ErrorMessage = "SVP entrez votre affiliation")]
         public string Affiliation { get; set; }

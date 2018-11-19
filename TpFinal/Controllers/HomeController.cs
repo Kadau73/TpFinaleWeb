@@ -16,6 +16,7 @@ namespace TpFinal.Controllers
             return View();
         }
 
+        //Formulaire Participant
         [HttpGet]
         public ViewResult Formulaire()
         {
@@ -39,6 +40,32 @@ namespace TpFinal.Controllers
         public ViewResult ListInscription()
         {
             return View(Archive.Inscription.Where(i => i.Montant > 0));
+        }
+
+        //Formulaire Membres CO
+        [HttpGet]
+        public ViewResult FormulaireMembresCO()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult FormulaireMembresCO(InscrireMembresCO p_inscriptionMCO)
+        {
+            if (ModelState.IsValid)
+            {
+                Archive.AjouterInscriptionMCO(p_inscriptionMCO);
+                return View("RoleAlloué", p_inscriptionMCO);
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        public ViewResult ListInscriptionMembresCO()
+        {
+            return View(Archive.InscriptionMCO.Where(i => i.Role != ""));
         }
     }
 }

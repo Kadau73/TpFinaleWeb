@@ -1,0 +1,44 @@
+﻿@model IEnumerable<TpFinal.Models.InscrireMembresCO>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <title>ListMembreCO</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel-body">
+        <h2>Voici la liste des membres du conseil d'organisation : </h2>
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Identifiant : </th>
+                    <th>Utilisateur : </th>
+                    <th>Rôle : </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (TpFinal.Models.InscrireMembresCO i in Model)
+                {
+                    <tr>
+                        <td>@i.Identifiant</td>
+                        <td>@i.CodeUtilisateur</td>
+                        <td>@i.Role</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

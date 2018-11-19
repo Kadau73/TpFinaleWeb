@@ -1,0 +1,73 @@
+﻿@model TpFinal.Models.InscrireMembresCO
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/monStyle.css" rel="stylesheet" />
+    <title>FormulaireMembresCo</title>
+</head>
+<body>
+    <div class="panel panel-success">
+        <div class="panel-heading text-center">
+            <h4>Rôle</h4>
+        </div>
+        <div class="panel-body">
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary()
+                <div class="form-group">
+                    <label>Identifiant :</label>
+                    @Html.TextBoxFor(i => i.Identifiant, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Utilisateur :</label>
+                    @Html.TextBoxFor(i => i.CodeUtilisateur, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Mot de passe :</label>
+                    @Html.TextBoxFor(i => i.Password, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Role Membre</label>
+                    @Html.DropDownListFor(i => i.Role,
+                        new[]
+                        {
+                            new SelectListItem()
+                            {
+                                Text = "Président Comité Organisateur",
+                                Value = "PCOrganisateur"
+                            },
+                            new SelectListItem()
+                            {
+                                Text = "Président Comité de Programme",
+                                Value = "PCProgramme"
+                            },
+                            new SelectListItem()
+                            {
+                                Text = " Responsable des Finances",
+                                Value = "RFinances"
+                            },
+                            new SelectListItem()
+                            {
+                                Text = " Responsable des Articles",
+                                Value = "PCArticles"
+                            }
+                        },
+                        "Choisissez une option", new { @class = "form-control" })
+                </div>
+                <div class="text-center">
+                    <input class="btn btn-success" type="submit" value="Go" />
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

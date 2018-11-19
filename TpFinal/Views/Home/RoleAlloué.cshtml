@@ -1,4 +1,4 @@
-﻿@model TpFinal.Models.InscrireParticipant
+﻿@model TpFinal.Models.InscrireMembresCO
 
 @{
     Layout = null;
@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
-    <title>Inscrit</title>
+    <title>RôleAlloué</title>
     <style>
         body {
             background-color: #f1f1f1;
@@ -19,18 +19,18 @@
 </head>
 <body>
     <div class="text-center">
-        <h1>Merci @Model.Prenom !</h1>
+        <h1>Le rôle @Model.Role à été alloué</h1>
         <div class="lead">
-            @if (Model.Montant > 0)
+            @if (Model.Role != "")
             {
-                @:Inscription Enregistrer
+                @:Role Enregistrer
             }
             else
             {
-                @:Inscription gratuite?
+                @:Le membre n'a pas reçu de rôle
             }
             <p>
-                <a href="@Url.Action("ListInscription", "Home")">Voir</a> les gens inscrit?
+                <a href="@Url.Action("ListMembreCO", "Home")">Voir</a> les autres membres?
             </p>
         </div>
     </div>
