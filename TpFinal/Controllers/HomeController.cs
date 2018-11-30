@@ -10,6 +10,10 @@ namespace TpFinal.Controllers
 {
     public sealed class HomeController : Controller
     {
+        private IArchive archive;
+
+        public HomeController(IArchive p_archive) => this.archive = p_archive;
+
         // GET: Home
         public ViewResult Index()
         {
@@ -24,12 +28,12 @@ namespace TpFinal.Controllers
         }
 
         [HttpPost]
-        public ViewResult Formulaire(InscrireParticipant p_inscription)
+        public ViewResult Formulaire(Participant p_participant)
         {
             if (ModelState.IsValid)
             {
-                Archive.AjouterInscription(p_inscription);
-                return View("Inscrit", p_inscription);
+                archive.AjouterParticipant(p_participant);
+                return View("Inscrit", p_participant);
             }
             else
             {
@@ -39,7 +43,7 @@ namespace TpFinal.Controllers
 
         public ViewResult ListInscription()
         {
-            return View(Archive.Inscription.Where(i => i.Montant > 0));
+            return View(archive.Participants().Where(i => i.Montant > 0));
         }
 
         //Formulaire Membres CO
@@ -50,11 +54,11 @@ namespace TpFinal.Controllers
         }
 
         [HttpPost]
-        public ViewResult FormulaireMembresCO(InscrireMembresCO p_inscriptionMCO)
+        public ViewResult FormulaireMembresCO(Organisateur p_inscriptionMCO)
         {
             if (ModelState.IsValid)
             {
-                Archive.AjouterInscriptionMCO(p_inscriptionMCO);
+                archive.AjouterOrganisateur(p_inscriptionMCO);
                 return View("RoleAlloué", p_inscriptionMCO);
             }
             else
@@ -63,9 +67,9 @@ namespace TpFinal.Controllers
             }
         }
 
-        public ViewResult ListInscriptionMembresCO()
+        public ViewResult ListMembreCO()
         {
-            return View(Archive.InscriptionMCO.Where(i => i.Role != ""));
+            return View(archive.Organisateurs().Where(i => i.Role != ""));
         }
     }
 }

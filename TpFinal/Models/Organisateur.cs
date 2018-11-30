@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace TpFinal.Models
 {
-    public class InscrireMembresCO
+    public class Organisateur
     {
-        [Required(ErrorMessage = "SVP entrez l'identifiant.")]
-        public string Identifiant { get; set; }
+        [Key]
+        public int ID { get; set; }
+        public int ParticipantId { get; set; }
         [Required(ErrorMessage = "SVP entrez le code d'utilisateur.")]
         public string CodeUtilisateur { get; set; }
         [Required(ErrorMessage = "SVP entrez le mot de passe")]

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace TpFinal.Models
 {
-    public class InscrireParticipant
+    public class Participant
     {
-        //public int ID { get; set; }
+        [Key]
+        public int ID { get; set; }
         [Required(ErrorMessage = "SVP entrez votre nom")]
         public string Nom { get; set; }
         [Required(ErrorMessage = "SVP entrez votre prénom")]
@@ -18,6 +19,8 @@ namespace TpFinal.Models
         public string Email { get; set; }
         [Required(ErrorMessage = "SVP entrez votre affiliation")]
         public string Affiliation { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime DateInscription { get; set; }
         public decimal Montant { get; set; }
     }

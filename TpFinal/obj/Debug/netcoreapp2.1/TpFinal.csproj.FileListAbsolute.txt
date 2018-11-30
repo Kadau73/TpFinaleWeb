@@ -38,7 +38,6 @@ C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.TagHe
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.TagHelpers.output.cache
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.RazorCoreGenerate.cache
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\Formulaire.g.cshtml.cs
-C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\FormulaireMembresCO.g.cshtml.cs
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\Inscrit.g.cshtml.cs
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\ListInscription.g.cshtml.cs
@@ -59,5 +58,6 @@ C:\420-Application_Web\TpFinaleWeb\TpFinal\bin\Debug\netcoreapp2.1\TpFinal.Views
 C:\420-Application_Web\TpFinaleWeb\TpFinal\bin\Debug\netcoreapp2.1\TpFinal.Views.pdb
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Views.pdb
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.csproj.CopyComplete
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\FormulaireMembresCO.g.cshtml.cs
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\ListMembreCO.g.cshtml.cs
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\RoleAlloué.g.cshtml.cs
