@@ -8,6 +8,7 @@ namespace TpFinal.Models
 {
     public class Session
     {
+        [Key]
         public int ArticleId { get; set; }
         public int MembreId { get; set; }
         public string Titre { get; set; }

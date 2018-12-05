@@ -1,4 +1,4 @@
-﻿@model TpFinal.Models.InscrireMembresCO
+﻿@model TpFinal.Models.Organisateur
 
 @{
     Layout = null;
@@ -32,6 +32,9 @@
             <p>
                 <a href="@Url.Action("ListMembreCO", "Home")">Voir</a> les autres membres?
             </p>
+        </div>
+        <div class="btn btn-success">
+            @Html.ActionLink("Retour", "Index") @*TODO*@
         </div>
     </div>
 </body>

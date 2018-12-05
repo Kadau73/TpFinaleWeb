@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TpFinal.Models.InscrireMembresCO>
+﻿@model IEnumerable<TpFinal.Models.Organisateur>
 
 @{
     Layout = null;
@@ -29,10 +29,10 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (TpFinal.Models.InscrireMembresCO i in Model)
+                @foreach (TpFinal.Models.Organisateur i in Model)
                 {
                     <tr>
-                        <td>@i.Identifiant</td>
+                        <td>@i.ParticipantId</td>
                         <td>@i.CodeUtilisateur</td>
                         <td>@i.Role</td>
                     </tr>

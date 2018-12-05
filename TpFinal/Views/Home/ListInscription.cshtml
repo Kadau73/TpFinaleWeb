@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TpFinal.Models.InscrireParticipant>
+﻿@model IEnumerable<TpFinal.Models.Participant>
 
 @{
     Layout = null;
@@ -23,15 +23,17 @@
         <table class="table table-sm table-striped table-bordered">
             <thead>
                 <tr>
+                    <th>Identifiant : </th>
                     <th>Prénom : </th>
                     <th>Nom : </th>
                     <th>Courriel : </th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (TpFinal.Models.InscrireParticipant i in Model)
+                @foreach (TpFinal.Models.Participant i in Model)
                 {
                 <tr>
+                    <th>@i.ID</th>
                     <td>@i.Prenom</td>
                     <td>@i.Nom</td>
                     <td>@i.Email</td>
@@ -39,6 +41,9 @@
                 }
             </tbody>
         </table>
+    </div>
+    <div>
+
     </div>
 </body>
 </html>

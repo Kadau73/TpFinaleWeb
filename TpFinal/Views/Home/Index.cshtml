@@ -22,12 +22,15 @@
     </style>
 </head>
 <body>
-    <div class="text-left">
+    <div class="text-center">
         <h1>Inscription Participant</h1>
         <h2>Hackfest</h2>
         <div class="btn btn-success">
             @Html.ActionLink("Inscription", "Formulaire")
         </div>
+        <p>
+            <a href="@Url.Action("ListInscription", "Home")">Voir</a> les gens inscrit?
+        </p>
     </div>
     <div class="text-center">
         <h1>Inscription MembresCO</h1>
@@ -35,6 +38,9 @@
         <div class="btn btn-success">
             @Html.ActionLink("Inscription", "FormulaireMembresCO")
         </div>
+        <p>
+            <a href="@Url.Action("ListMembreCO", "Home")">Voir</a> les autres membres?
+        </p>
     </div>
 </body>
 </html>
