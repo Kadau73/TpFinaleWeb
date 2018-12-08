@@ -10,18 +10,24 @@ namespace TpFinal.Models
     {
         [Key]
         public int ID { get; set; }
-        [Required(ErrorMessage = "SVP entrez votre nom")]
+
+        [Required(ErrorMessage = "SVP entrez votre nom.")]
         public string Nom { get; set; }
-        [Required(ErrorMessage = "SVP entrez votre prénom")]
+
+        [Required(ErrorMessage = "SVP entrez votre prénom.")]
         public string Prenom { get; set; }
-        [Required(ErrorMessage = "SVP entrez votre adresse électronique")]
+
+        [Required(ErrorMessage = "SVP entrez votre adresse électronique.")]
         [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Courriel valide SVP.")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "SVP entrez votre affiliation")]
+
+        [Required(ErrorMessage = "SVP entrez votre affiliation.")]
         public string Affiliation { get; set; }
+
         [DataType(DataType.Date)]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime DateInscription { get; set; }
+
         public decimal Montant { get; set; }
     }
 }

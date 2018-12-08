@@ -63,7 +63,7 @@ using TpFinal.Models;
             WriteLiteral("\r\n<!DOCTYPE>\r\n<html>\r\n");
             EndContext();
             BeginContext(86, 326, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3825aff79a4e486c952b6ec2aa4b3f15", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "67722d124c254df68a205ba72f7232be", async() => {
                 BeginContext(92, 313, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width"" />
@@ -93,7 +93,7 @@ using TpFinal.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(414, 469, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6301205c62ea45d99ea8ab3e3f331d3d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "605f8d97ebaa47a299dc3658b4fd05eb", async() => {
                 BeginContext(420, 51, true);
                 WriteLiteral("\r\n    <div class=\"text-center\">\r\n        <h1>Merci ");
                 EndContext();

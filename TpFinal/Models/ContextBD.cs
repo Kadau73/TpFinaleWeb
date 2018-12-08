@@ -18,11 +18,11 @@ namespace TpFinal.Models
         public virtual DbSet<Organisateur> Organisateurs { get; set; }
         public virtual DbSet<MembreArticle> MembreArticles { get; set; }
         public virtual DbSet<Membre> Membres { get; set; }
-        public virtual DbSet<Paiement> Paiement { get; set; }
+        public virtual DbSet<Paiement> Paiements { get; set; }
         public virtual DbSet<Participant> Participants { get; set; }
-        public virtual DbSet<Session> Session { get; set; }
+        public virtual DbSet<Session> Sessions { get; set; }
         public virtual DbSet<Spécialité> Spécialités { get; set; }
-        public virtual DbSet<VersionArticle> VersionArticle { get; set; }
+        public virtual DbSet<VersionArticle> VersionArticles { get; set; }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

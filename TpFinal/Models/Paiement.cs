@@ -10,10 +10,14 @@ namespace TpFinal.Models
     {
         [Key]
         public int ID { get; set; }
+
+        [Required(ErrorMessage = "SVP entrez l'id du participant.")]
         public int ParticipantId { get; set; }
+
         [DataType(DataType.Date)]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime DatePaiement { get; set; }
+
         public decimal Montant { get; set; }
     }
 }

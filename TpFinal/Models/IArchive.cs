@@ -20,5 +20,8 @@ namespace TpFinal.Models
 
         void AjouterOrganisateur(Organisateur p_organisateur);
 
+        //paiment
+        IQueryable<Paiement> Paiements();
+        void AjouterPaiment(Paiement p_paiement);
     }
 }

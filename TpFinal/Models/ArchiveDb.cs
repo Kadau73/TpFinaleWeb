@@ -79,5 +79,28 @@ namespace TpFinal.Models
             }
             contexte.SaveChanges();
         }
+
+        //Paiment
+        public IQueryable<Paiement> Paiements() => contexte.Paiements;
+
+        public void AjouterPaiment(Paiement p_paiement)
+        {
+            if (p_paiement.ID == 0)
+            {
+                contexte.Paiements.Add(p_paiement);
+            }
+            else
+            {
+                Paiement maRéponse = contexte.Paiements
+                .FirstOrDefault(r => r.ID == p_paiement.ID);
+                if (maRéponse != null)
+                {
+                    maRéponse.ParticipantId = p_paiement.ParticipantId;
+                    maRéponse.DatePaiement = p_paiement.DatePaiement;
+                    maRéponse.Montant = p_paiement.Montant;
+                }
+            }
+            contexte.SaveChanges();
+        }
     }
 }

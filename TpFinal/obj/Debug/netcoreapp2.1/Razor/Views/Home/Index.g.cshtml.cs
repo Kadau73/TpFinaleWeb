@@ -60,7 +60,7 @@ using TpFinal.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(56, 418, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a71049a3009247e687459f146055edf8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "067ad8e772fe4b609f65655ebcb3c7a9", async() => {
                 BeginContext(62, 405, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width"" />
@@ -95,7 +95,7 @@ using TpFinal.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(476, 705, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37b4c3646e794487a2d3234d12bf5a91", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7d70099140b45d49fb5389d911bf4d3", async() => {
                 BeginContext(482, 153, true);
                 WriteLiteral("\r\n    <div class=\"text-center\">\r\n        <h1>Inscription Participant</h1>\r\n        <h2>Hackfest</h2>\r\n        <div class=\"btn btn-success\">\r\n            ");
                 EndContext();

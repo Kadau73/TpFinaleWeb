@@ -61,3 +61,10 @@ C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.cspro
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\FormulaireMembresCO.g.cshtml.cs
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\ListMembreCO.g.cshtml.cs
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\RoleAlloué.g.cshtml.cs
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.csproj.GenerateResource.cache
+C:\420-Application_Web\TpFinaleWeb\TpFinal\bin\Debug\netcoreapp2.1\en-US\TpFinal.resources.dll
+C:\420-Application_Web\TpFinaleWeb\TpFinal\bin\Debug\netcoreapp2.1\fr-CA\TpFinal.resources.dll
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsParticipant.en-US.resources
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsParticipant.fr-CA.resources
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\en-US\TpFinal.resources.dll
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\fr-CA\TpFinal.resources.dll
