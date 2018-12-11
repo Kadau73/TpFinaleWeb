@@ -120,6 +120,9 @@
   <data name="Courriel valide SVP." xml:space="preserve">
     <value>Valid email please. </value>
   </data>
+  <data name="SVP entrez un montant." xml:space="preserve">
+    <value>Please enter how much you pay.</value>
+  </data>
   <data name="SVP entrez votre adresse électronique." xml:space="preserve">
     <value>Please enter your email.</value>
   </data>

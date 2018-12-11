@@ -1,0 +1,4 @@
+C:\420-Application_Web\TpFinaleWeb\TpFinalTest.test\obj\Debug\netcoreapp2.1\TpFinalTest.test.csprojAssemblyReference.cache
+C:\420-Application_Web\TpFinaleWeb\TpFinalTest.test\obj\Debug\netcoreapp2.1\TpFinalTest.test.csproj.CoreCompileInputs.cache
+C:\420-Application_Web\TpFinaleWeb\TpFinalTest.test\obj\Debug\netcoreapp2.1\TpFinalTest.test.AssemblyInfoInputs.cache
+C:\420-Application_Web\TpFinaleWeb\TpFinalTest.test\obj\Debug\netcoreapp2.1\TpFinalTest.test.AssemblyInfo.cs

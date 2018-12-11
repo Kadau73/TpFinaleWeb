@@ -100,7 +100,7 @@ namespace TpFinal.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Paiement");
+                    b.ToTable("Paiements");
                 });
 
             modelBuilder.Entity("TpFinal.Models.Participant", b =>
@@ -144,7 +144,7 @@ namespace TpFinal.Migrations
 
                     b.HasKey("ArticleId");
 
-                    b.ToTable("Session");
+                    b.ToTable("Sessions");
                 });
 
             modelBuilder.Entity("TpFinal.Models.Spécialité", b =>
@@ -174,7 +174,7 @@ namespace TpFinal.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("VersionArticle");
+                    b.ToTable("VersionArticles");
                 });
 #pragma warning restore 612, 618
         }

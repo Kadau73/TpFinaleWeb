@@ -28,6 +28,7 @@ namespace TpFinal.Models
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime DateInscription { get; set; }
 
+        [Required(ErrorMessage = "SVP entrez un montant")]
         public decimal Montant { get; set; }
     }
 }

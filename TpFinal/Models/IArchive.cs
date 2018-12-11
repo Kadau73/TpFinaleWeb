@@ -22,6 +22,6 @@ namespace TpFinal.Models
 
         //paiment
         IQueryable<Paiement> Paiements();
-        void AjouterPaiment(Paiement p_paiement);
+        void AjouterPaiement(Paiement p_paiement);
     }
 }

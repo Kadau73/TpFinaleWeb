@@ -1,0 +1,46 @@
+﻿@model TpFinal.Models.Paiement
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/monStyle.css" rel="stylesheet" />
+    <title>FormulairePaiement</title>
+</head>
+<body>
+    <div class="panel panel-success">
+        <div class="panel-heading text-center">
+            <h4>Paiement</h4>
+        </div>
+        <div class="panel-body">
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary()
+                <div class="form-group">
+                    <label>Id Participant :</label>
+                    @Html.TextBoxFor(i => i.ParticipantId, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Date :</label>
+                    @Html.TextBoxFor(i => i.DatePaiement, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Montant :</label>
+                    @Html.TextBoxFor(i => i.Montant, new { @class = "form-control" })
+                </div>
+                
+                <div class="text-center">
+                    <input class="btn btn-success" type="submit" value="Go" />
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

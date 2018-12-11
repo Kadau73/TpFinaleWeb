@@ -9,6 +9,11 @@ namespace TpFinal.Models
         {
             contexte = p_contexte;
         }
+
+        public ArchiveDb()
+        {
+        }
+
         //Participant
         public IQueryable<Participant> Participants() => contexte.Participants;
 
@@ -83,7 +88,7 @@ namespace TpFinal.Models
         //Paiment
         public IQueryable<Paiement> Paiements() => contexte.Paiements;
 
-        public void AjouterPaiment(Paiement p_paiement)
+        public void AjouterPaiement(Paiement p_paiement)
         {
             if (p_paiement.ID == 0)
             {

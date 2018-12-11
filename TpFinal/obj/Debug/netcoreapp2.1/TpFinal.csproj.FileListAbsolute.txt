@@ -68,3 +68,10 @@ C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resou
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsParticipant.fr-CA.resources
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\en-US\TpFinal.resources.dll
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\fr-CA\TpFinal.resources.dll
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\FormulairePaiement.g.cshtml.cs
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\ListPaiement.g.cshtml.cs
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\Payer.g.cshtml.cs
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsOrganisateur.en-US.resources
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsOrganisateur.fr-CA.resources
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsPaiement.en-US.resources
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsPaiement.fr-CA.resources

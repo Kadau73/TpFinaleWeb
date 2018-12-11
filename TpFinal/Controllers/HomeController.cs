@@ -56,7 +56,9 @@ namespace TpFinal.Controllers
         [HttpPost]
         public ViewResult FormulaireMembresCO(Organisateur p_inscriptionMCO)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid &&
+                archive.Participants().Count(p => p.ID == p_inscriptionMCO.ParticipantId) == 1 &&
+                archive.Organisateurs().Count(o => o.CodeUtilisateur == p_inscriptionMCO.CodeUtilisateur) == 0)
             {
                 archive.AjouterOrganisateur(p_inscriptionMCO);
                 return View("RoleAlloué", p_inscriptionMCO);
@@ -70,6 +72,34 @@ namespace TpFinal.Controllers
         public ViewResult ListMembreCO()
         {
             return View(archive.Organisateurs().Where(i => i.Role != ""));
+        }
+
+        // Paiement
+        [HttpGet]
+        public ViewResult FormulairePaiement()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult FormulairePaiement(Paiement p_paiement)
+        {
+            if (ModelState.IsValid &&
+                archive.Participants().Count(p => p.ID == p_paiement.ParticipantId) == 1 &&
+                archive.Paiements().Count(p1 => p1.ParticipantId == p_paiement.ParticipantId) == 0)
+            {
+                archive.AjouterPaiement(p_paiement);
+                return View("Payer", p_paiement);
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        public ViewResult ListPaiement()
+        {
+            return View(archive.Paiements().Where(i => i.Montant > 0));
         }
     }
 }

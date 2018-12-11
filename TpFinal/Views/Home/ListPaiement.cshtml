@@ -1,0 +1,49 @@
+﻿@model IEnumerable<TpFinal.Models.Paiement>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <title>ListInscription</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel-body">
+        <h2>Voici la liste des gens qui ont payer : </h2>
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Id Participant : </th>
+                    <th>Montant : </th>
+                    <th>Date : </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (TpFinal.Models.Paiement p in Model)
+                {
+                <tr>
+                    <th>@p.ParticipantId</th>
+                    <td>@p.Montant</td>
+                    <td>@p.DatePaiement</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p>
+            <a href="@Url.Action("Index", "Home")">Retourner</a> à la page d'acceuil?
+        </p>
+    </div>
+</body>
+</html>

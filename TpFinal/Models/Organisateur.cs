@@ -17,8 +17,8 @@ namespace TpFinal.Models
         [Required(ErrorMessage = "SVP entrez le code d'utilisateur.")]
         public string CodeUtilisateur { get; set; }
 
-        [Required(ErrorMessage = "SVP entrez le mot de passe")]
-        //[RegularExpression("0123456789", ErrorMessage = "Mot de passe invalide.")]
+        [Required(ErrorMessage = "SVP entrez le mot de passe.")]
+        [RegularExpression("(?=.*[0-9]).{8,25}$", ErrorMessage = "Mot de passe invalide.")]
         public string Password { get; set; }
 
         [Required(ErrorMessage = "SVP choisir un rôle.")]
