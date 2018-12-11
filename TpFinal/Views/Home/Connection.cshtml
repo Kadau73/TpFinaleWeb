@@ -1,0 +1,61 @@
+﻿@model TpFinal.Models.Organisateur
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/monStyle.css" rel="stylesheet" />
+    <title>Connection</title>
+</head>
+<body>
+    <div class="panel panel-success">
+        <div class="panel-heading text-center">
+            <h4>Connection</h4>
+        </div>
+        <div class="panel-body">
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary()
+                <div class="form-group">
+                    <label>Utilisateur :</label>
+                    @Html.TextBoxFor(i => i.CodeUtilisateur, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Mot de passe :</label>
+                    @Html.TextBoxFor(i => i.Password, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Role Membre</label>
+                    @Html.DropDownListFor(i => i.Role,
+                        new[]
+                        {
+                            new SelectListItem()
+                            {
+                                Text = " Responsable des Finances",
+                                Value = "RFinances"
+                            },
+                            
+                        },
+                        "Choisissez une option", new { @class = "form-control" })
+                </div>
+
+                <div class="text-center">
+                    <input class="btn btn-success" type="submit" value="Go" />
+                </div>
+                <div>
+                    <p>
+                        <a href="@Url.Action("Index", "Home")">Retourner</a> à la page d'acceuil?
+                    </p>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

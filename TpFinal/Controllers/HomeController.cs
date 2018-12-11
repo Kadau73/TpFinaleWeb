@@ -86,7 +86,8 @@ namespace TpFinal.Controllers
         {
             if (ModelState.IsValid &&
                 archive.Participants().Count(p => p.ID == p_paiement.ParticipantId) == 1 &&
-                archive.Paiements().Count(p1 => p1.ParticipantId == p_paiement.ParticipantId) == 0)
+                archive.Paiements().Count(p1 => p1.ParticipantId == p_paiement.ParticipantId) == 0 &&
+                archive.Participants().Where(p2 => p2.ID == p_paiement.ParticipantId).Count(p3 => p3.DateInscription <= p_paiement.DatePaiement) == 1)
             {
                 archive.AjouterPaiement(p_paiement);
                 return View("Payer", p_paiement);
@@ -100,6 +101,29 @@ namespace TpFinal.Controllers
         public ViewResult ListPaiement()
         {
             return View(archive.Paiements().Where(i => i.Montant > 0));
+        }
+
+        //connection
+        [HttpGet]
+        public ViewResult Connection()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult Connection(Organisateur p_connection)
+        {
+
+            if (ModelState.IsValid &&
+                archive.Organisateurs().Where(o=>o.Role == "RFinances").Count(o1=>o1.CodeUtilisateur == p_connection.CodeUtilisateur) ==1 &&
+                archive.Organisateurs().Where(o=>o.Role == "RFinances").Count(o1=>o1.Password == p_connection.Password) ==1 )
+            {
+                return View("FormulairePaiement");
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

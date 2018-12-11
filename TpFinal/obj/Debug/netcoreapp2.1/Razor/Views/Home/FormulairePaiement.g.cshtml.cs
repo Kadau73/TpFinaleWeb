@@ -66,12 +66,12 @@ using TpFinal.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(90, 300, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75d5713c99504ae4be3e76114cb59d2a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d29e5caa6bb0458d83e76a31ead4d690", async() => {
                 BeginContext(96, 195, true);
                 WriteLiteral("\r\n    <link rel=\"stylesheet\" href=\"/css/styles.css\" />\r\n    <link rel=\"stylesheet\" href=\"/lib/bootstrap/dist/css/bootstrap.css\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    ");
                 EndContext();
                 BeginContext(291, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "caaf841f0bda42e3b05ad441535b3a43", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "18a25f637dd2423188311b27a1be4881", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -105,7 +105,7 @@ using TpFinal.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(392, 1101, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "741cb88cc8fb4efea75e07ec49812478", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "97b52d808e1243e08d94538ffc8a6e7d", async() => {
                 BeginContext(398, 171, true);
                 WriteLiteral("\r\n    <div class=\"panel panel-success\">\r\n        <div class=\"panel-heading text-center\">\r\n            <h4>Paiement</h4>\r\n        </div>\r\n        <div class=\"panel-body\">\r\n");
                 EndContext();

@@ -63,7 +63,7 @@ using TpFinal.Models;
             WriteLiteral("\r\n<!DOCTYPE>\r\n<html>\r\n");
             EndContext();
             BeginContext(100, 331, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fca2200ea22c42ec80cc076ae095a996", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "895984a5aad34f7e97821d4d3312ac1d", async() => {
                 BeginContext(106, 318, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width"" />
@@ -93,7 +93,7 @@ using TpFinal.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(433, 918, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "93401258f4c04f4aaa8473773375d3b1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6711349b5408433d95c188bc8f7b4bb9", async() => {
                 BeginContext(439, 412, true);
                 WriteLiteral(@"
     <div class=""panel-body"">

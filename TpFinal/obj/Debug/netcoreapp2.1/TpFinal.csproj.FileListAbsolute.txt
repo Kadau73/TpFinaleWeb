@@ -75,3 +75,4 @@ C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resou
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsOrganisateur.fr-CA.resources
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsPaiement.en-US.resources
 C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\TpFinal.Resources.ModelsPaiement.fr-CA.resources
+C:\420-Application_Web\TpFinaleWeb\TpFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\Connection.g.cshtml.cs
